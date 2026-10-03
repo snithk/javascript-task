@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pre and Post Decrement</title>
+</head>
+
+<body>
+
+    <h1 align="center">Unary Operators: Pre-Decrement and Post-Decrement</h1>
+
+    <table border="1" cellpadding="10" cellspacing="0" width="100%">
+
+        <tr bgcolor="lightblue">
+            <th>Operation</th>
+            <th>Value of a (before)</th>
+            <th>Value returned (b)</th>
+            <th>Value of a (after)</th>
+            <th>Explanation</th>
+        </tr>
+
+        <tbody id="result"></tbody>
+
+    </table>
+
+    <script>
+        var output = "";
+
+        // ---------- Post-Decrement (a--) ----------
+        // First the current value is used, then a is decreased by 1
+        var a = 10;
+        var before = a;
+        var b = a--;
+        console.log("Post-Decrement: a = " + before + ", b = a-- gives b = " + b + ", a = " + a);
+
+        output += "<tr>" +
+            "<td>Post-Decrement: b = a--</td>" +
+            "<td>" + before + "</td>" +
+            "<td>" + b + "</td>" +
+            "<td>" + a + "</td>" +
+            "<td>Value is used first, then a is decreased by 1</td>" +
+            "</tr>";
+
+        // ---------- Pre-Decrement (--a) ----------
+        // First a is decreased by 1, then the new value is used
+        a = 10;
+        before = a;
+        b = --a;
+        console.log("Pre-Decrement: a = " + before + ", b = --a gives b = " + b + ", a = " + a);
+
+        output += "<tr>" +
+            "<td>Pre-Decrement: b = --a</td>" +
+            "<td>" + before + "</td>" +
+            "<td>" + b + "</td>" +
+            "<td>" + a + "</td>" +
+            "<td>a is decreased by 1 first, then the new value is used</td>" +
+            "</tr>";
+
+        // ---------- Mixed example ----------
+        // x-- uses 5 (x becomes 4), then --x makes x 3 and uses 3
+        var x = 5;
+        before = x;
+        var result = x-- + --x;   // 5 + 3 = 8
+        console.log("Mixed: x = " + before + ", x-- + --x = " + result + ", x = " + x);
+
+        output += "<tr>" +
+            "<td>Mixed: result = x-- + --x</td>" +
+            "<td>" + before + "</td>" +
+            "<td>" + result + "</td>" +
+            "<td>" + x + "</td>" +
+            "<td>x-- gives 5 (x becomes 4), then --x makes x 3 and gives 3. So 5 + 3 = 8</td>" +
+            "</tr>";
+
+        document.getElementById("result").innerHTML = output;
+    </script>
+
+</body>
+
+</html>

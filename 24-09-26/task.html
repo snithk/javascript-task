@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Utilities</title>
+    <link rel="stylesheet" href="task.css" />
+  </head>
+  <body>
+    <h1 class="page-title">Math logics</h1>
+    <div class="grid">
+      <div class="card">
+        <h2>Average Of Three Numbers</h2>
+        <div class="input1">
+          <label>Enter first number :</label>
+          <input type="number" placeholder="EX:10" id="n1" />
+        </div>
+        <div class="input1">
+          <label>Enter second number :</label>
+          <input type="number" placeholder="EX:20" id="n2" />
+        </div>
+        <div class="input1">
+          <label>Enter third number :</label>
+          <input type="number" placeholder="EX:40" id="n3" />
+        </div>
+        <button onclick="avgnum()">Average</button>
+        <div class="result" id="res1"></div>
+      </div>
+
+      <div class="card">
+        <h2>DOM Average Of Three Numbers</h2>
+        <div class="input1">
+          <label>Enter first number :</label>
+          <input type="number" placeholder="EX:10" id="d1" />
+        </div>
+        <div class="input1">
+          <label>Enter second number :</label>
+          <input type="number" placeholder="EX:20" id="d2" />
+        </div>
+        <div class="input1">
+          <label>Enter third number :</label>
+          <input type="number" placeholder="EX:40" id="d3" />
+        </div>
+        <button onclick="domavgnum()">Average</button>
+        <div class="result" id="domaverageofthree"></div>
+      </div>
+
+      <div class="card">
+        <h2>Sum Of Natural Numbers</h2>
+        <div class="input1">
+          <label>Enter a number :</label>
+          <input type="number" placeholder="EX:10" id="n6" />
+        </div>
+        <button onclick="sumnaturalnum()">Sum</button>
+        <div class="result" id="sumnatural"></div>
+      </div>
+
+      <div class="card">
+        <h2>Profit Percentage</h2>
+        <div class="input1">
+          <label>Selling price :</label>
+          <input type="number" placeholder="EX:120" id="sp" />
+        </div>
+        <div class="input1">
+          <label>Cost price :</label>
+          <input type="number" placeholder="EX:100" id="cp" />
+        </div>
+        <button onclick="Profit_percentage()">Calculate</button>
+        <div class="result" id="profit_percentage"></div>
+      </div>
+
+      <div class="card">
+        <h2>Simple Interest</h2>
+        <div class="input1">
+          <label>Principal :</label>
+          <input type="number" placeholder="EX:1000" id="p" />
+        </div>
+        <div class="input1">
+          <label>Time :</label>
+          <input type="number" placeholder="EX:2" id="t" />
+        </div>
+        <div class="input1">
+          <label>Rate :</label>
+          <input type="number" placeholder="EX:5" id="r" />
+        </div>
+        <button onclick="ptr()">Calculate</button>
+        <div class="result" id="ptr"></div>
+      </div>
+
+      <div class="card">
+        <h2>Missing Angle Of Triangle</h2>
+        <div class="input1">
+          <label>Angle 1 :</label>
+          <input type="number" placeholder="EX:60" id="angle1" />
+        </div>
+        <div class="input1">
+          <label>Angle 2 :</label>
+          <input type="number" placeholder="EX:70" id="angle2" />
+        </div>
+        <button onclick="missingangle()">Calculate</button>
+        <div class="result" id="angle"></div>
+      </div>
+
+      <div class="card">
+        <h2>Last Digit Of A Number</h2>
+        <div class="input1">
+          <label>Enter a number :</label>
+          <input type="number" placeholder="EX:1234" id="l" />
+        </div>
+        <button onclick="last()">Find</button>
+        <div class="result" id="last"></div>
+      </div>
+
+      <div class="card">
+        <h2>Remove Last Digit</h2>
+        <div class="input1">
+          <label>Enter a number :</label>
+          <input type="number" placeholder="EX:1234" id="rd" />
+        </div>
+        <button onclick="remove()">Remove</button>
+        <div class="result" id="removedigit"></div>
+      </div>
+
+      <div class="card">
+        <h2>First Digit Of A Number</h2>
+        <div class="input1">
+          <label>Enter a number :</label>
+          <input type="number" placeholder="EX:456" id="first_digit" />
+        </div>
+        <button onclick="fFirst_digit_3_digit_number()">Find</button>
+        <div class="result" id="firstdigit"></div>
+      </div>
+
+      <div class="card">
+        <h2>First Digit Of A 5-Digit Number</h2>
+        <div class="input1">
+          <label>Enter a 5-digit number :</label>
+          <input type="number" placeholder="EX:54321" id="fd5" />
+        </div>
+        <button onclick="firstDigitFiveDigit()">Find</button>
+        <div class="result" id="firstdigit5"></div>
+      </div>
+
+      <div class="card">
+        <h2>Celsius To Fahrenheit</h2>
+        <div class="input1">
+          <label>Temp in &deg;C :</label>
+          <input type="number" placeholder="EX:37" id="celsius" />
+        </div>
+        <button onclick="celsiusToFahrenheit()">Convert</button>
+        <div class="result" id="fahrenheit"></div>
+      </div>
+
+      <div class="card">
+        <h2>Fahrenheit To Celsius</h2>
+        <div class="input1">
+          <label>Temp in &deg;F :</label>
+          <input type="number" placeholder="EX:98" id="fahrenheit_in" />
+        </div>
+        <button onclick="fahrenheitToCelsius()">Convert</button>
+        <div class="result" id="celsius_out"></div>
+      </div>
+
+      <div class="card">
+        <h2>Gross Salary</h2>
+        <div class="input1">
+          <label>Basic salary :</label>
+          <input type="number" placeholder="EX:20000" id="basic" />
+        </div>
+        <div class="input1">
+          <label>HRA :</label>
+          <input type="number" placeholder="EX:5000" id="hra" />
+        </div>
+        <div class="input1">
+          <label>DA :</label>
+          <input type="number" placeholder="EX:3000" id="da" />
+        </div>
+        <button onclick="grossSalary()">Calculate</button>
+        <div class="result" id="gross"></div>
+      </div>
+
+      <div class="card">
+        <h2>Swap Two Numbers (With Third Variable)</h2>
+        <div class="input1">
+          <label>First number :</label>
+          <input type="number" placeholder="EX:5" id="swap1a" />
+        </div>
+        <div class="input1">
+          <label>Second number :</label>
+          <input type="number" placeholder="EX:10" id="swap1b" />
+        </div>
+        <button onclick="swapWithThird()">Swap</button>
+        <div class="result" id="swapWithThirdResult"></div>
+      </div>
+
+      <div class="card">
+        <h2>Swap Two Numbers (Without Third Variable)</h2>
+        <div class="input1">
+          <label>First number :</label>
+          <input type="number" placeholder="EX:5" id="swap2a" />
+        </div>
+        <div class="input1">
+          <label>Second number :</label>
+          <input type="number" placeholder="EX:10" id="swap2b" />
+        </div>
+        <button onclick="swapWithoutThird()">Swap</button>
+        <div class="result" id="swapWithoutThirdResult"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="task.js"></script>
+  </body>
+</html>

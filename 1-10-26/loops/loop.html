@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops Practice</title>
+    <link rel="stylesheet" href="loop.css">
+</head>
+<body>
+    <h1>Loops Practice</h1>
+    <div class="container">
+        
+    <div class="task">
+        <h2>1. Sum of Digits</h2>
+        <p class="hint">Example: 738 &rarr; 7 + 3 + 8 = 18</p>
+        <div class="input-group">
+            <label for="num1">Enter a number</label>
+            <input type="number" id="num1">
+        </div>
+        <button onclick="sumOfDigits()">Calculate</button>
+        <div class="result" id="result1"></div>
+    </div>
+
+    <div class="task">
+        <h2>2. Sum of Natural Numbers</h2>
+        <p class="hint">Sum of natural numbers from 1 to n</p>
+        <div class="input-group">
+            <label for="num2">Enter n</label>
+            <input type="number" id="num2">
+        </div>
+        <button onclick="sumOfNaturalNumbers()">Calculate</button>
+        <div class="result" id="result2"></div>
+    </div>
+
+    <div class="task">
+        <h2>3. Sum of First and Last Digit</h2>
+        <p class="hint">Example: 936 &rarr; 9 + 6 = 15</p>
+        <div class="input-group">
+            <label for="num3">Enter a number</label>
+            <input type="number" id="num3">
+        </div>
+        <button onclick="sumOfFirstAndLastDigit()">Calculate</button>
+        <div class="result" id="result3"></div>
+    </div>
+
+    <div class="task">
+        <h2>4. Difference Between Even and Odd Sums</h2>
+        <p class="hint">Difference between the sum of even and odd numbers from 1 to n</p>
+        <div class="input-group">
+            <label for="num4">Enter n</label>
+            <input type="number" id="num4">
+        </div>
+        <button onclick="differenceBetweenEvenAndOdd()">Calculate</button>
+        <div class="result" id="result4"></div>
+    </div>
+
+    <div class="task">
+        <h2>5. Average of Digits Divisible by 5</h2>
+        <p class="hint">Example: 12575 &rarr; Divisible by 5 digits: 5, 5, 5 &rarr; Average = 5</p>
+        <div class="input-group">
+            <label for="num5">Enter a number</label>
+            <input type="number" id="num5">
+        </div>
+        <button onclick="averageOfDigitsDivisibleBy5()">Calculate</button>
+        <div class="result" id="result5"></div>
+    </div>
+
+    <div class="task">
+        <h2>6. Average of Digits</h2>
+        <p class="hint">Example: 624 &rarr; (6 + 2 + 4) / 3 = 4</p>
+        <div class="input-group">
+            <label for="num6">Enter a number</label>
+            <input type="number" id="num6">
+        </div>
+        <button onclick="averageOfDigits()">Calculate</button>
+        <div class="result" id="result6"></div>
+    </div>
+
+    <div class="task">
+        <h2>7. Check Prime Number</h2>
+        <p class="hint">Checks whether the given number is prime</p>
+        <div class="input-group">
+            <label for="num7">Enter a number</label>
+            <input type="number" id="num7">
+        </div>
+        <button onclick="isPrime()">Check</button>
+        <div class="result" id="result7"></div>
+    </div>
+
+    <div class="task">
+        <h2>8. Leap Years in a Range</h2>
+        <p class="hint">Prints all leap years between the start and end year</p>
+        <div class="input-group">
+            <label for="startYear">Start year</label>
+            <input type="number" id="startYear">
+        </div>
+        <div class="input-group">
+            <label for="endYear">End year</label>
+            <input type="number" id="endYear">
+        </div>
+        <button onclick="printLeapYears()">Find</button>
+        <div class="result" id="result8"></div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="loops.js"></script>
+</body>
+</html>

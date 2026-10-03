@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumping Statements</title>
+    <link rel="stylesheet" href="jumping_statement.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Jumping Statements</h1>
+        <p>Enter the values and click the button to see the result</p>
+    </div>
+
+    <div class="container">
+
+        <div class="task">
+            <p class="info">Display the first number divisible by 5 within the given range.</p>
+            <label>Start Range</label>
+            <input type="number" id="start1">
+            <label>End Range</label>
+            <input type="number" id="end1">
+            <button onclick="firstDivisibleOf5()">First Divisible by 5</button>
+            <p class="result" id="result1"></p>
+        </div>
+
+        <div class="task">
+            <p class="info">Display the last number divisible by 3 within the given range.</p>
+            <label>Start Range</label>
+            <input type="number" id="start2">
+            <label>End Range</label>
+            <input type="number" id="end2">
+            <button onclick="lastDivisibleOf3()">Last Divisible by 3</button>
+            <p class="result" id="result2"></p>
+        </div>
+
+        <div class="task">
+            <p class="info">Display the first three numbers within the given range.</p>
+            <label>Start Range</label>
+            <input type="number" id="start3">
+            <label>End Range</label>
+            <input type="number" id="end3">
+            <button onclick="firstThreeNumbers()">First Three Numbers</button>
+            <p class="result" id="result3"></p>
+        </div>
+
+        <div class="task">
+            <p class="info">Display the last even digit of the given number.</p>
+            <label>Number</label>
+            <input type="number" id="number1">
+            <button onclick="lastEvenNumber()">Last Even Digit</button>
+            <p class="result" id="result4"></p>
+        </div>
+
+        <div class="task">
+            <p class="info">Display the first digit that is less than 3 in the given number.</p>
+            <label>Number</label>
+            <input type="number" id="number2">
+            <button onclick="firstDigitLessThan3()">First Digit Less Than 3</button>
+            <p class="result" id="result5"></p>
+        </div>
+
+        <div class="task">
+            <p class="info">Display numbers from 1 up to the given number, skipping the number 3 using continue.</p>
+            <label>Number</label>
+            <input type="number" id="number3">
+            <button onclick="displayNumbersWithContinue()">Display Numbers (Continue)</button>
+            <p class="result" id="result6"></p>
+        </div>
+
+        <div class="task">
+            <p class="info">Display all numbers within the given range, skipping the even numbers.</p>
+            <label>Start Range</label>
+            <input type="number" id="start4">
+            <label>End Range</label>
+            <input type="number" id="end4">
+            <button onclick="skipEvenNumbers()">Skip Even Numbers</button>
+            <p class="result" id="result7"></p>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="jumping_statement.js"></script>
+</body>
+</html>

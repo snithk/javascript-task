@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Loops Practice</title>
+    <link rel="stylesheet" href="nestloop.css">
+</head>
+<body>
+    <header>
+        <h1>Nested Loops Practice</h1>
+        <p>Enter the values and click the button to see the result</p>
+    </header>
+    
+    <div class="container">
+        
+
+        <div class="task-card">
+            <h2>1. Sum of Prime Numbers</h2>
+            <p>Find the sum of all prime numbers between two numbers.</p>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="input1Start">Start</label>
+                    <input type="number" id="input1Start" value="20">
+                </div>
+                <div class="input-group">
+                    <label for="input1End">End</label>
+                    <input type="number" id="input1End" value="150">
+                </div>
+            </div>
+            <button onclick="sumOfPrimeNumbers()">Calculate</button>
+            <div class="result" id="output1"></div>
+        </div>
+
+        <div class="task-card">
+            <h2>2. Average of Perfect Numbers</h2>
+            <p>Find the average of all perfect numbers between two numbers.</p>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="input2Start">Start</label>
+                    <input type="number" id="input2Start" value="1">
+                </div>
+                <div class="input-group">
+                    <label for="input2End">End</label>
+                    <input type="number" id="input2End" value="1000">
+                </div>
+            </div>
+            <button onclick="averageOfPerfectNumbers()">Calculate</button>
+            <div class="result" id="output2"></div>
+        </div>
+
+        <div class="task-card">
+            <h2>3. Palindrome Numbers</h2>
+            <p>Print all palindrome numbers between two numbers.</p>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="input3Start">Start</label>
+                    <input type="number" id="input3Start" value="100">
+                </div>
+                <div class="input-group">
+                    <label for="input3End">End</label>
+                    <input type="number" id="input3End" value="500">
+                </div>
+            </div>
+            <button onclick="printPalindromeNumbers()">Calculate</button>
+            <div class="result" id="output3"></div>
+        </div>
+
+        <div class="task-card">
+            <h2>4. Numbers With Exactly 3 Factors</h2>
+            <p>Print all numbers between two numbers that have exactly 3 factors.</p>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="input4Start">Start</label>
+                    <input type="number" id="input4Start" value="10">
+                </div>
+                <div class="input-group">
+                    <label for="input4End">End</label>
+                    <input type="number" id="input4End" value="300">
+                </div>
+            </div>
+            <button onclick="printFactorOf3()">Calculate</button>
+            <div class="result" id="output4"></div>
+        </div>
+
+        <div class="task-card">
+            <h2>5. Number With Maximum Factors</h2>
+            <p>Find the number between two numbers that has the maximum number of factors.</p>
+            <div class="input-row">
+                <div class="input-group">
+                    <label for="input5Start">Start</label>
+                    <input type="number" id="input5Start" value="50">
+                </div>
+                <div class="input-group">
+                    <label for="input5End">End</label>
+                    <input type="number" id="input5End" value="150">
+                </div>
+            </div>
+            <button onclick="numberWithMaxFactors()">Calculate</button>
+            <div class="result" id="output5"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="nestedloops.js"></script>
+</body>
+</html>
